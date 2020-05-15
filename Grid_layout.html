@@ -8,55 +8,65 @@
     <!-- Updated by Jon Gutierrez, may.1o,2020 -->
     <link rel="stylesheet" href="gridbox.css">
     <style>
+        #wrapper {
+            background-color: seagreen;
+            color: #000066;
+            width: auto;
+            margin: auto;
+            min-width: 650px;
+        }
+
         .normal {
             padding: 1rem 1rem;
-            border: 2px solid var(--color, black);
-            background: transparent;
+            border: 2px solid var(--color, Black);
+            background: solid;
             font-size: 1.2em;
-            border-radius: 5px;
+            border-radius: 2px;
             font-weight: bold;
         }
 
         .normal:hover {
             cursor: pointer;
-            background: var(--color, black);
+            background: var(--color, yellow);
             color: white;
         }
 
-        #leftcolumn ul {
+        #leftcolumn {
             list-style-type: none;
         }
     </style>
 </head>
 
 <body>
-    <div class="grid">
-        <div class="grid-area grid-area-1">
-            <h1>Gutty's corner</h1>
-        </div>
-        <div id="leftcolumn" class="grid-area grid-area-2">
-            <h2>Menu</h2>
-            <ul>
+    <div id="wrapper">
+        <div class="grid">
+            <div class="grid-area grid-area-1">
+                <h1>Gutty's corner</h1>
+            </div>
+            <br>
+            <div id="leftcolumn" class="grid-area grid-area-2">
+                <h2>Menu</h2>
+                <ul>
 
-                <li> <button class="normal">
-                        <a href="index.html">Home</a> </button></li>
+                    <li> <button class="normal">
+                            <a href="index.html">Home</a> </button></li>
 
-                <li><button class="normal"><a href="Assignments.html">Assignments</a></button> </li>
+                    <li><button class="normal"><a href="Assignments.html">Assignments</a></button> </li>
 
-                <li> <button class="normal">
-                        <a href="Contact.html">Contact</a> </button> </li>
-            </ul>
+                    <li> <button class="normal">
+                            <a href="Contact.html">Contact</a> </button> </li>
+                </ul>
+            </div>
+            <div class="grid-area grid-area-3">
+                <h2>content</h2>
+                <p>This is just random content to fill out a few paragraphs for the assignment. Geez this pandemic is givng me all sorts of anxiety. I'm also kicking myself for not taking advantage of being out and about with my friends pre-covid. But I am glad that the majority of the bay area populous is adhreing to the SIP order, way to go! </p>
+            </div>
+            <div class="grid-area grid-area-4">
+                <p>Created with purpose by: <cite>Jon Gutierrez</cite>
+                    <strong>Copyright</strong> &copy; 2020 and the future!</p>
+            </div>
         </div>
-        <div class="grid-area grid-area-3">
-            <h2>content</h2>
-            <p>This is just random content to fill out a few paragraphs for the assignment. Geez this pandemic is givng me all sorts of anxiety. I'm also kicking myself for not taking advantage of being out and about with my friends pre-covid. But I am glad that the majority of the bay area populous is adhreing to the SIP order, way to go! </p>
-        </div>
-       
-        <div class="grid-area grid-area-4">
-            <p>Created with purpose by: <cite>Jon Gutierrez</cite></p>
-            <strong>Copyright</strong> &copy; 2020 and the future!
-        </div>
-</body>
+    </div>
 </body>
 
 </html>
