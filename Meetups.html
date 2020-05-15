@@ -6,20 +6,73 @@
     <meta charset="utf-8">
     <meta mame="description" content="Meetup Page">
     <!-- Jon Gutierrez Feb.19th,2020 -->
+    <link rel="stylesheet" href="gridbox.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <style>
+        @media only screen and (max-width:620px) {
+
+            .grid-area-1,
+            .grid-area-2,
+            .grid-area-3,
+            grid-area-4,
+            .grid {
+                width: 100%;
+            }
+        }
+
+        #wrapper {
+            background-color: seagreen;
+            color: #000066;
+            width: auto;
+            margin: auto;
+            min-width: 650px;
+        }
+
+        .normal {
+            padding: 1rem 1rem;
+            border: 2px solid var(--color, Black);
+            background: lightgreen;
+            font-size: 1.2em;
+            border-radius: 2px;
+            font-weight: bold;
+
+        }
+
+        .normal:hover {
+            cursor: pointer;
+            background: var(--color, yellow);
+            color: white;
+        }
+
+        #leftcolumn ul {
+            list-style-type: none;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Jon Gutierrez CNIT 132</h1>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Assignments.html">Assignments</a></li>
-        <li><a href="Meetups.html">Meetups</a></li>
-    </ul>
-    <hr>
-    <br>
-    <h2>...Meetup reports coming soon!</h2>
-
-
+    <div id="wrapper">
+        <div class="grid">
+            <div class="grid-area grid-area-1">
+                <h1>Jon Gutierrez CNIT 132</h1>
+            </div>
+            <div id="leftcolumn" class="grid-area grid-area-2">
+                <ul>
+                    <li> <button class="normal"> <a href="index.html">Home</a> </button> </li>
+                    <li> <button class="normal"> <a href="Assignments.html">Assignments</a> </button> </li>
+                    <li> <button class="normal"> <a href="Contact.html">Contact</a> </button> </li>
+                </ul>
+            </div>
+            <div class="grid-area grid-area-3">
+                <h2>Tech Connections</h2>
+                <p>Due to recent global events bah blah blah...</p>
+            </div>
+            <div class="grid-area grid-area-4">
+                <p id="bottom">Created with purpose by: <cite>Jon Gutierrez</cite>
+                    <strong>Copyright</strong> &copy; 2020 and the future! </p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

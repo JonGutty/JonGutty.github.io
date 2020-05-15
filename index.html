@@ -6,10 +6,44 @@
     <meta charset="utf-8">
     <meta name="description" content="Front work page made by Jon Gutierrez, web developer, for CNIT 132 at CCSF using HTML5 and CSS3">
     <!-- Jon Gutierrez, Feb. 6th 2020 -->
-
+    <link rel="stylesheet" href="gridbox.css">
     <style>
-        .rotateimg {
-            transform: rotate(90deg)
+        #wrapper {
+            background-color: seagreen;
+            color: #000066;
+            width: auto;
+            margin: auto;
+            min-width: 650px;
+        }
+
+        .normal {
+            padding: 1rem 1rem;
+            border: 2px solid var(--color, Black);
+            background: lightgreen;
+            font-size: 1.2em;
+            border-radius: 2px;
+            font-weight: bold;
+
+        }
+
+        .normal:hover {
+            cursor: pointer;
+            background: var(--color, yellow);
+            color: white;
+        }
+
+        #leftcolumn ul {
+            list-style-type: none;
+        }
+
+        h2 {
+            color: #869dc7;
+            font-family: arial, sans-serif;
+        }
+
+        #floatright {
+            margin: 10px;
+            float: right;
         }
 
         h2 {
@@ -26,47 +60,54 @@
 </head>
 
 <body>
+    <div id="wrapper">
+        <div class="grid">
+            <div class="grid-area grid-area-1">
+                <h1 id="top">Jon Gutierrez - CNIT132</h1>
+            </div>
+            <div id="leftcolumn" class="grid-area grid-area-2">
+                <ul>
+                    <li> <button class="normal"> <a href="index.html">Home</a> </button> </li>
+                    <li> <button class="normal"> <a href="Assignments.html">Assignments</a> </button> </li>
+                    <li> <button class="normal"> <a href="Meetups.html">Meetups</a> </button> </li>
+                    <li> <button class="normal"> <a href="Contact.html">Contact</a> </button> </li>
+                </ul>
+            </div>
+            <br>
+            <div class="grid-area grid-area-3">
+                <img src="jon_tater.jpg" alt="jon and his dog tater" id="floatright" height="150" width="150" class="rotateimg">
+                <h2><b><em>About</em></b></h2>
+                <p> Greetings from Jon Gutierrez!<br>
+                    Here is a little background info, being born and raised in Fresno, Ca. I grew up with many challenges and hardships that gave me a unique outlook on life. 2011 marked the year in which I left Fresno to persue my dream of living in San Francisco, during these last 9 years I have had a wide range of jobs and lived in various neighborhoods here in the city. My favorite job to date was working as a bike courier for local company called <em><b>"TCB Courier"</b></em>, sadly that company is no longer operating but I was able to meet and befriend people I wouldn't have met otherwise. Now after living in almost every neighborhood I've found myself always returning to the exact same area I first arrived when relocating to the city, which is the <b><em>Inner Sunset</em></b> neighborhood. With tons of delicious eateries and quaint cafes on various corners in the Inner Sunset this area will always be a special place to me.
+                </p>
+                <br>
+                <h2 id="pathway"><b><em>Pathfinder</em></b></h2>
+                <p>I originally had the singular goal of acquiring a career in Cyber Securtity but upon completion of the HTML/CSS Introductory class I was consumed with wanting to explore more of the coding world that is Web Development. Now having a better understanding for html/css code I found that <a href="https://www.mashsf.com/" target="_blank" rel="noreferrer noopener">MashSF</a> is a site I refer to when looking for inspiration in design and layout. The reasons I am referencing this page is due to how the page is cramed full of content but is laid out in a way that isn't overwhelming. The pages navigation is simple to manage and the drop down menus are clean and orderly making it a breeze to find specific content.
+                </p>
 
-    <h1 id="top">Jon Gutierrez - CNIT132</h1>
-    <ul>
-        <li> <a href="index.html">Home</a> </li>
-        <li> <a href="Assignments.html">Assignments</a> </li>
-        <li> <a href="Meetups.html">Meetups</a></li>
-        <li> <a href="Contact.html">Contact</a></li>
-    </ul>
-    <hr>
-    <br>
-    <img src="jon_tater.jpg" alt="jon and his dog tater" height="150" width="150" class="rotateimg">
-    <h2><b><em>About</em></b></h2>
-    <p> Greetings from Jon Gutierrez!<br>
-        Here is a little background info, being born and raised in Fresno, Ca. I grew up with many challenges and hardships that gave me a unique outlook on life. 2011 marked the year in which I left Fresno to persue my dream of living in San Francisco, during these last 9 years I have had a wide range of jobs and lived in various neighborhoods here in the city. My favorite job to date was working as a bike courier for local company called <em><b>"TCB Courier"</b></em>, sadly that company is no longer operating but I was able to meet and befriend people I wouldn't have met otherwise. Now after living in almost every neighborhood I've found myself always returning to the exact same area I first arrived when relocating to the city, which is the <b><em>Inner Sunset</em></b> neighborhood. With tons of delicious eateries and quaint cafes on various corners in the Inner Sunset this area will always be a special place to me.
-    </p>
-    <br>
-    <h2 id="pathway"><b><em>Pathfinder</em></b></h2>
-    <p>I originally had the singular goal of acquiring a career in Cyber Securtity but upon completion of the HTML/CSS Introductory class I was consumed with wanting to explore more of the coding world that is Web Development. Now having a better understanding for html/css code I found that <a href="https://www.mashsf.com/" target="_blank" rel="noreferrer noopener">MashSF</a> is a site I refer to when looking for inspiration in design and layout. The reasons I am referencing this page is due to how the page is cramed full of content but is laid out in a way that isn't overwhelming. The pages navigation is simple to manage and the drop down menus are clean and orderly making it a breeze to find specific content.
-    </p>
+                <br>
+                <h2 id="counsel"><b><em>Student Counseling</em></b></h2>
 
-    <br>
-    <h2 id="counsel"><b><em>Student Counseling</em></b></h2>
-
-    <p> CCSF has a fantastic student counseling service available on the Ocean Ave. campus. When I was first starting to apply to CCSF I came here to get a sense of direction of what I wanted to study and what type of career I wanted to pursue. Not only was I able to talk one on one with an advisor but also help me pick out classes that worked around my current schedule.
-        Click the following link to get connected. <a href="http://www.ccsf.edu/en/student-services/student-counseling.html#subcontent" target="_blank" rel="noreferrer noopener">CCSF Student Counseling webpage.</a>
-    </p>
-    <hr>
-    <section class="specific">
-        <h2>Good Links</h2>
-        <ul>
-            <li> <a href="https://www.w3schools.com/w3css/default.asp/" target="_blank" rel="noreferrer noopener">W3 Schools Home Page</a>: I recommend this website due to it's extensive catalog of html and css information</li>
-            <li> <a href="https://uxengineer.com/" target="_blank" rel="noreferrer noopener">UX Engineer Home page</a>: I vist this site if i need a source of inspiration or troubleshooting problems.</li>
-            <li> <a href="https://validator.w3.org/#validate_by_input" target="_blank" rel="noreferrer noopener">Code Validator by W3C</a>: I use this all the time to make sure my code does not have any errors before pushing it out to the public.</li>
-        </ul>
-
-    </section>
-
-    <a href="#top">Top of page</a>
-    <hr>
-    <p id="bottom">Created with purpose by: <cite>Jon Gutierrez</cite></p>
-    <strong>Copyright</strong> &copy; 2020 and the future!
+                <p> CCSF has a fantastic student counseling service available on the Ocean Ave. campus. When I was first starting to apply to CCSF I came here to get a sense of direction of what I wanted to study and what type of career I wanted to pursue. Not only was I able to talk one on one with an advisor but also help me pick out classes that worked around my current schedule.
+                    Click the following link to get connected. <a href="http://www.ccsf.edu/en/student-services/student-counseling.html#subcontent" target="_blank" rel="noreferrer noopener">CCSF Student Counseling webpage.</a>
+                </p>
+                <hr>
+                <section class="specific">
+                    <h2>Good Links</h2>
+                    <ul>
+                        <li> <a href="https://www.w3schools.com/w3css/default.asp/" target="_blank" rel="noreferrer noopener">W3 Schools Home Page</a>: I recommend this website due to it's extensive catalog of html and css information</li>
+                        <li> <a href="https://uxengineer.com/" target="_blank" rel="noreferrer noopener">UX Engineer Home page</a>: I vist this site if i need a source of inspiration or troubleshooting problems.</li>
+                        <li> <a href="https://validator.w3.org/#validate_by_input" target="_blank" rel="noreferrer noopener">Code Validator by W3C</a>: I use this all the time to make sure my code does not have any errors before pushing it out to the public.</li>
+                    </ul>
+                </section>
+            </div>
+            <hr>
+            <div class="grid-area grid-area-4">
+                <p id="bottom">Created with purpose by: <cite>Jon Gutierrez</cite>
+                    <strong>Copyright</strong> &copy; 2020 and the future! </p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
