@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jon Gutierrez's Assignments Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+    <meta name="description" content="WebPage made by Jon Gutierrez showcasing previous assignments">
+    <!-- Jon Gutierrez, Feb. 6th 2020 -->
+    <link rel="stylesheet" href="gridbox.css">
+    <style>
+        @media only screen and (max-width:620px) {
+
+            .grid-area-1,
+            .grid-area-2,
+            .grid-area-3,
+            grid-area-4,
+            .grid {
+                width: 100%;
+            }
+        }
+
+        #wrapper {
+            background-color: seagreen;
+            color: #000066;
+            width: auto;
+            margin: auto;
+            min-width: 620px;
+        }
+
+        .normal {
+            padding: 1rem 1rem;
+            border: 2px solid var(--color, Black);
+            background: lightgreen;
+            font-size: 1.2em;
+            border-radius: 2px;
+            font-weight: bold;
+
+        }
+
+        .normal:hover {
+            cursor: pointer;
+            background: var(--color, yellow);
+            color: white;
+        }
+
+        #leftcolumn ul {
+            list-style-type: none;
+        }
+
+        .assbutt {
+            padding: 1rem 1rem;
+            border: 2px solid var(--color, black);
+            background: solid;
+            font-size: 2em;
+            border-radius: 2px;
+            font-weight: bold;
+        }
+
+        .assbutt:hover {
+            cursor: pointer;
+            background: var(--color, tan);
+            color: white;
+        }
+
+        #leftcolumn ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="grid">
+            <div class="grid-area grid-area-1">
+                <h1>Jon Gutierrez - CNIT132</h1>
+            </div>
+            <br>
+            <div id="leftcolumn" class="grid-area grid-area-2">
+                <ul>
+                    <li> <button class="normal"> <a href="index.html">Home</a></button> </li>
+                    <li> <button class="normal"> <a href="Assignments.html">Assignments</a></button> </li>
+                    <li> <button class="normal"> <a href="Meetups.html">Meetups</a></button> </li>
+                    <li> <button class="normal"> <a href="Contact.html">Contact</a></button> </li>
+                </ul>
+            </div>
+            <hr>
+            <br>
+            <div class="grid-area grid-area-3">
+                <h2>CNIT ASSIGNMENTS</h2>
+                <ul>
+                    <li> <button class="assbutt"> <a href="homework2.html">homework2</a></button> </li>
+                    <li> <button class="assbutt"><a href="Grid_layout.html">Short Task assignment</a></button> </li>
+                </ul>
+            </div>
+            <hr>
+             <div class="grid-area grid-area-4">
+                <p id="bottom">Created with purpose by: <cite>Jon Gutierrez</cite>
+                    <strong>Copyright</strong> &copy; 2020 and the future! </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
